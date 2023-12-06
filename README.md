@@ -9,8 +9,10 @@ Data Extraction: It extracts relevant information from the files, such as produc
 Structured Output: The extracted data is organized into a structured format, making it easy to analyze and use.
 
 # Requirements
-Ensure you have Python 3.9.6 installed on your system. Additionally, you may need to install the required Python packages using the following command:
+Ensure you have Python 3.9.7 installed on your system. Additionally, you may need to install the required Python packages using the following command:
 pip install pandas
+or 
+install all dependency via requirements.txt file
 
 # Run the script
 Navigate to the project directory:
