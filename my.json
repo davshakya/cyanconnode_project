@@ -1,0 +1,28 @@
+{
+    "product_details": [
+        {
+            "Product ID": 12345,
+            "Name": "Test",
+            "Price": "$19.99 ",
+            "In Stock": " Yes"
+        },
+        {
+            "Product ID": "100",
+            "Name": "csvTest",
+            "Price": "$500.99 ",
+            "In Stock": " Yes"
+        },
+        {
+            "Product ID": "1234",
+            "Name": "csvTest",
+            "Price": "$109.99 ",
+            "In Stock": " No"
+        },
+        {
+            "Product ID": "1111",
+            "Name": "text_Test",
+            "Price": "$1999.99",
+            "In Stock": "No"
+        }
+    ]
+}
