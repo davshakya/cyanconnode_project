@@ -12,7 +12,7 @@ Structured Output: The extracted data is organized into a structured format, mak
 Ensure you have Python 3.9.7 installed on your system. Additionally, you may need to install the required Python packages using the following command:
 pip install pandas
 or 
-install all dependency via requirements.txt file
+install all dependency with requirements.txt file
 
 # Run the script
 Navigate to the project directory:
