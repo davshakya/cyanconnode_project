@@ -16,9 +16,13 @@ install all dependency with requirements.txt file
 
 # Run the script
 Navigate to the project directory:
-python main.py
+arg1=path of csv_file 
+arg2=path of text_file
+python main.py arg1 arg2
 or
 Double click on run_python.bat
 Check the my.json output file for the extracted and structured data.
+or
+
 
 

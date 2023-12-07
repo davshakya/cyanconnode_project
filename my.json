@@ -2,7 +2,7 @@
     "product_details": [
         {
             "Product ID": "test",
-            "Name": "Test",
+            "Name": "test",
             "Price": "test",
             "In Stock": "Yes/No"
         },
