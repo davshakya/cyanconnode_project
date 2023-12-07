@@ -22,7 +22,7 @@ python main.py arg1 arg2
 or
 Double click on run_python.bat
 Check the my.json output file for the extracted and structured data.
-or
+
 
 
 
