@@ -1,14 +1,15 @@
 import pandas as pd
 import json
+import sys
 
 class ProductDetails:
-    def __init__(self):
+    def __init__(self,csv_path,txt_path):
         dictionary = {"product_details": [{"Product ID": "12345","Name": "Test","Price": "$19.99 ","In Stock": " Yes"}]}
         json_object = json.dumps(dictionary, indent=4)
         with open("my.json", "w") as outfile:
             outfile.write(json_object)
-        self.convert_csv_to_json()
-        self.convert_text_to_json()
+        self.convert_csv_to_json(csv_path)
+        self.convert_text_to_json(txt_path)
     
     def search_product_id_in_existing_json_data(self, product_id):
         with open("my.json", 'r+') as json_file:
@@ -28,8 +29,8 @@ class ProductDetails:
             json_file.seek(0)
             json.dump(file_data, json_file, indent=4)
 
-    def convert_csv_to_json(self):
-        csv_data = pd.read_csv("csv_test.csv")
+    def convert_csv_to_json(self,csv_path):
+        csv_data = pd.read_csv(csv_path)
         try:
             csv_row = csv_data.to_dict(orient="records")[0:]
             for row_csv in range(len(csv_row)):
@@ -42,8 +43,8 @@ class ProductDetails:
         except:
             print("The data is not available in the correct format or the csv file is corrupted")
 
-    def convert_text_to_json(self):
-        with open("test.txt", "r") as txt_file:
+    def convert_text_to_json(self,txt_path):
+        with open(txt_path, "r") as txt_file:
             file_content = txt_file.readlines()
             try:
                 txt_dict = {}
@@ -64,5 +65,11 @@ class ProductDetails:
 
 
 
-obj=ProductDetails()
 
+def get_arg():
+    arguments = sys.argv[1:]
+    try:
+        obj=ProductDetails(csv_path=arguments[0],txt_path=arguments[1])
+    except:
+        obj=ProductDetails("csv_test.csv","text_test.txt")
+get_arg()
