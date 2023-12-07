@@ -71,5 +71,5 @@ def get_arg():
     try:
         obj=ProductDetails(csv_path=arguments[0],txt_path=arguments[1])
     except:
-        obj=ProductDetails("csv_test.csv","text_test.txt")
+        obj=ProductDetails(csv_path="csv_test.csv",txt_path="text_test.txt")
 get_arg()
