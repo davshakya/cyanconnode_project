@@ -1,10 +1,10 @@
 {
     "product_details": [
         {
-            "Product ID": "12345",
+            "Product ID": "test",
             "Name": "Test",
-            "Price": "$19.99 ",
-            "In Stock": " Yes"
+            "Price": "test",
+            "In Stock": "Yes/No"
         },
         {
             "Product ID": "100",

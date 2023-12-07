@@ -4,7 +4,7 @@ import sys
 
 class ProductDetails:
     def __init__(self,csv_path,txt_path):
-        dictionary = {"product_details": [{"Product ID": "12345","Name": "Test","Price": "$19.99 ","In Stock": " Yes"}]}
+        dictionary = {"product_details": [{"Product ID": "test","Name": "test","Price": "test","In Stock": "Yes/No"}]}
         json_object = json.dumps(dictionary, indent=4)
         with open("my.json", "w") as outfile:
             outfile.write(json_object)
